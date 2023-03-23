@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { urlMovieTheaters } from "../endpoints";
 import DisplayErrors from "../utils/DisplayErrors";
 import MovieTheaterForm from "./MovieTheaterForm";
-import { movieTheaterCreationDTO } from "./movieTheaters.model";
+import { movieTheaterCreationDTO } from "../model/movieTheaters.model";
 
 export default function CreateMovieTheater() {
   const history = useHistory();

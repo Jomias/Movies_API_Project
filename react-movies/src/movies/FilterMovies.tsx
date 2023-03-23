@@ -3,11 +3,11 @@ import { Field, Form, Formik } from "formik";
 import { useEffect, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import { urlGenres, urlMovies } from "../endpoints";
-import { genreDTO } from "../genres/genres.model";
-import AlertContext from "../utils/AlertContext";
+import { genreDTO } from "../model/genres.model";
+import AlertContext from "../context/AlertContext";
 import Button from "../utils/Button";
 import Pagination from "../utils/Pagination";
-import { movieDTO } from "./movies.model";
+import { movieDTO } from "../model/movies.model";
 import MoviesList from "./MoviesList";
 
 export default function FilterMovies() {
@@ -50,7 +50,6 @@ export default function FilterMovies() {
         initialValues.page = parseInt(String(pageValue));
       }
     }
-    console.log(initialValues);
     searchMovies(initialValues);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

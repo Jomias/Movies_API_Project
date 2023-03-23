@@ -2,13 +2,13 @@ import axios, { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { urlMovies } from "../endpoints";
-import { genreDTO } from "../genres/genres.model";
-import { movieTheaterDTO } from "../movieTheaters/movieTheaters.model";
+import { genreDTO } from "../model/genres.model";
+import { movieTheaterDTO } from "../model/movieTheaters.model";
 import DisplayErrors from "../utils/DisplayErrors";
 import { convertMovieToFormData } from "../utils/formDataUtils";
 import Loading from "../utils/Loading";
 import MovieForm from "./MovieForm";
-import { movieCreationDTO, moviesPostGetDTO } from "./movies.model";
+import { movieCreationDTO, moviesPostGetDTO } from "../model/movies.model";
 
 export default function CreateMovie() {
   const [nonSelectedGenres, setNonSelectedGenres] = useState<genreDTO[]>([]);

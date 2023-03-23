@@ -1,7 +1,7 @@
 import { urlGenres } from "../endpoints";
 import EditEntity from "../utils/EditEntity";
 import GenreForm from "./GenreForm";
-import { genreCreationDTO, genreDTO } from "./genres.model";
+import { genreCreationDTO, genreDTO } from "../model/genres.model";
 
 export default function EditGenre() {
 

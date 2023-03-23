@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from "axios";
 import { ReactElement, useState } from "react";
 import { AsyncTypeahead } from "react-bootstrap-typeahead";
-import { actorMovieDTO } from "../actors/actors.model";
+import { actorMovieDTO } from "../model/actors.model";
 import { urlActors } from "../endpoints";
 
 export default function TypeAheadActors(props: typeAheadActorsProps) {

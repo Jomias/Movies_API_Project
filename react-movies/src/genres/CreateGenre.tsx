@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { urlGenres } from "../endpoints";
 import DisplayErrors from "../utils/DisplayErrors";
 import GenreForm from "./GenreForm";
-import { genreCreationDTO } from "./genres.model";
+import { genreCreationDTO } from "../model/genres.model";
 
 export default function CreateGenre() {
   const history = useHistory();

@@ -7,7 +7,7 @@ import DisplayErrors from "../utils/DisplayErrors";
 import { convertMovieToFormData } from "../utils/formDataUtils";
 import Loading from "../utils/Loading";
 import MovieForm from "./MovieForm";
-import { movieCreationDTO, moviesPutGetDTO } from "./movies.model";
+import { movieCreationDTO, moviesPutGetDTO } from "../model/movies.model";
 
 export default function EditMovie() {
   const { id }: any = useParams();

@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { urlActors } from "../endpoints";
 import DisplayErrors from "../utils/DisplayErrors";
 import { convertActorToFormData } from "../utils/formDataUtils";
-import { actorCreationDTO } from "./actors.model";
+import { actorCreationDTO } from "../model/actors.model";
 import ActorForm from "./ActorForm";
 
 export default function CreateActor() {
@@ -12,6 +12,7 @@ export default function CreateActor() {
   const history = useHistory();
   async function create(actor: actorCreationDTO) {
     try {
+      setErrors([]);
       const formData = convertActorToFormData(actor);
       await axios({
         method: 'post',

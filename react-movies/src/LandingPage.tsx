@@ -1,9 +1,9 @@
 import axios, { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
 import { urlMovies } from "./endpoints";
-import { landingPageDTO } from "./movies/movies.model";
+import { landingPageDTO } from "./model/movies.model";
 import MoviesList from "./movies/MoviesList";
-import AlertContext from "./utils/AlertContext";
+import AlertContext from "./context/AlertContext";
 
 export default function LandingPage() {
   const [movies, setMovies] = useState<landingPageDTO>({});
@@ -23,9 +23,10 @@ export default function LandingPage() {
         loadData();
       }}
     >
+
       <h3>In Theaters</h3>
       <MoviesList movies={movies.inTheaters} />
-      <h3 className="mt-5">Upcoming</h3>
+      <h3>Upcoming</h3>
       <MoviesList movies={movies.upcomingReleases} />
     </AlertContext.Provider>
   );

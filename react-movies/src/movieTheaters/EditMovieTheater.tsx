@@ -1,7 +1,7 @@
 import { urlMovieTheaters } from "../endpoints";
 import EditEntity from "../utils/EditEntity";
 import MovieTheaterForm from "./MovieTheaterForm";
-import { movieTheaterCreationDTO, movieTheaterDTO } from "./movieTheaters.model";
+import { movieTheaterCreationDTO, movieTheaterDTO } from "../model/movieTheaters.model";
 
 export default function EditMovieTheater() {
 

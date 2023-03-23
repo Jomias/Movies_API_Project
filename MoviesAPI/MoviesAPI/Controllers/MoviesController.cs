@@ -1,4 +1,8 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MoviesAPI.DTOs;
@@ -9,27 +13,22 @@ namespace MoviesAPI.Controllers
 {
     [Route("api/movies")]
     [ApiController]
+
     public class MoviesController : ControllerBase
     {
         private readonly ApplicationDbContext context;
         private readonly IMapper mapper;
         private readonly IFileStorageService fileStorageService;
+        private readonly UserManager<IdentityUser> userManager;
         private readonly string containerName = "movies";
-        public MoviesController(ApplicationDbContext context, IMapper mapper, IFileStorageService fileStorageService)
+        public MoviesController(ApplicationDbContext context, IMapper mapper, IFileStorageService fileStorageService, UserManager<IdentityUser> userManager)
         {
             this.context = context;
             this.mapper = mapper;
             this.fileStorageService = fileStorageService;
+            this.userManager = userManager;
         }
-        //api/movies
-        //[HttpGet]
-        //public async Task<ActionResult<List<MovieDTO>>> Get([FromQuery] PaginationDTO paginationDTO)
-        //{
-        //    var queryable = context.Movies.AsQueryable();
-        //    await HttpContext.InsertParametersPaginationInHeader(queryable);
-        //    var movies = await queryable.OrderBy(x => x.Title).Paginate(paginationDTO).ToListAsync();
-        //    return mapper.Map<List<MovieDTO>>(movies);
-        //}
+
 
         //// api/movies/{id}
         [HttpGet("{id:int}")]
@@ -78,7 +77,7 @@ namespace MoviesAPI.Controllers
 
             await HttpContext.InsertParametersPaginationInHeader(moviesQueryable);
             var movies = await moviesQueryable.OrderBy(x => x.Title).Paginate(filterMoviesDTO.PaginationDTO).ToListAsync();
-            return mapper.Map<List<MovieDTO>>(movies);
+             return mapper.Map<List<MovieDTO>>(movies);
         }
         [HttpGet("PostGet")]
         public async Task<ActionResult<MoviePostGetDTO>> PostGet()
@@ -128,6 +127,7 @@ namespace MoviesAPI.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<LandingPageDTO>> Get()
         {
             var top = 4;
@@ -151,6 +151,7 @@ namespace MoviesAPI.Controllers
             return landingPageDTO;
         }
         [HttpPost]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<int>> Post([FromForm] MovieCreationDTO movieCreationDTO)
         {
             var movie = mapper.Map<Movie>(movieCreationDTO);
@@ -165,6 +166,8 @@ namespace MoviesAPI.Controllers
         }
 
         [HttpPut("{id:int}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
         public async Task<ActionResult> Put(int id, [FromForm] MovieCreationDTO movieCreationDTO)
         {
             var movie = await context.Movies
@@ -191,6 +194,8 @@ namespace MoviesAPI.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
         public async Task<ActionResult> Delete(int id)
         {
             var movie = await context.Movies.FirstOrDefaultAsync(x => x.Id == id);    

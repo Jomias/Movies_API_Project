@@ -2,7 +2,7 @@ import { Form, Formik, FormikHelpers } from "formik";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
-import { actorMovieDTO } from "../actors/actors.model";
+import { actorMovieDTO } from "../model/actors.model";
 import CheckboxField from "../forms/CheckboxField";
 import DateField from "../forms/DateField";
 import ImageField from "../forms/ImagesField";
@@ -11,10 +11,10 @@ import MultipleSelector, {
   multipleSelectorModel,
 } from "../forms/MultipleSelector";
 import TextField from "../forms/TextField";
-import { genreDTO } from "../genres/genres.model";
-import { movieTheaterDTO } from "../movieTheaters/movieTheaters.model";
+import { genreDTO } from "../model/genres.model";
+import { movieTheaterDTO } from "../model/movieTheaters.model";
 import Button from "../utils/Button";
-import { movieCreationDTO } from "./movies.model";
+import { movieCreationDTO } from "../model/movies.model";
 import TypeAheadActors from "./TypesAheadActors";
 
 export default function MovieForm(props: movieFormProps) {

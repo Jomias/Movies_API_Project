@@ -1,6 +1,6 @@
 import { urlActors } from "../endpoints";
 import IndexEntity from "../utils/IndexEntity";
-import { actorDTO } from "./actors.model";
+import { actorDTO } from "../model/actors.model";
 
 export default function IndexActors() {
   return (

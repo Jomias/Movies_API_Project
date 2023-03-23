@@ -95,3 +95,8 @@ D:\Tai_lieu_dai_hoc\Nam_3\Ki_2\API\BTL\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetT
 D:\Tai_lieu_dai_hoc\Nam_3\Ki_2\API\BTL\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.IO.SqlServerBytes.dll
 D:\Tai_lieu_dai_hoc\Nam_3\Ki_2\API\BTL\MoviesAPI\MoviesAPI\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs
 D:\Tai_lieu_dai_hoc\Nam_3\Ki_2\API\BTL\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Tai_lieu_dai_hoc\Nam_3\Ki_2\API\BTL\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Tai_lieu_dai_hoc\Nam_3\Ki_2\API\BTL\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Tai_lieu_dai_hoc\Nam_3\Ki_2\API\BTL\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Tai_lieu_dai_hoc\Nam_3\Ki_2\API\BTL\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\Tai_lieu_dai_hoc\Nam_3\Ki_2\API\BTL\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

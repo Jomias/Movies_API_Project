@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MoviesAPI.DTOs;
 using MoviesAPI.Entities;
-using MoviesAPI.Migrations;
 using NetTopologySuite.Geometries;
 
 namespace MoviesAPI.Helpers

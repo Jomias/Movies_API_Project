@@ -1,6 +1,6 @@
 import { urlMovieTheaters } from "../endpoints";
 import IndexEntity from "../utils/IndexEntity";
-import { movieTheaterDTO } from "./movieTheaters.model";
+import { movieTheaterDTO } from "../model/movieTheaters.model";
 
 export default function IndexMovieTheaters() {
   return (

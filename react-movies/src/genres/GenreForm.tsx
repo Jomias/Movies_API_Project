@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "../utils/Button";
 import * as Yup from "yup";
 import TextField from "../forms/TextField";
-import { genreCreationDTO } from "./genres.model";
+import { genreCreationDTO } from "../model/genres.model";
 
 export default function GenreForm(props: genreFormProps) {
   return (

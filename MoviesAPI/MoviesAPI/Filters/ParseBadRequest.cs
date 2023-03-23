@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 
@@ -9,7 +10,7 @@ namespace MoviesAPI.Filters
         public void OnActionExecuted(ActionExecutedContext context)
         {
             var result = context.Result as IStatusCodeActionResult;
-            if (result != null)
+            if (result == null)
             {
                 return;
             }
@@ -18,10 +19,17 @@ namespace MoviesAPI.Filters
             {
                 var response = new List<string>();
                 var badRequestObjectResult = context.Result as BadRequestObjectResult;
-                if (badRequestObjectResult.Value is string) 
+                if (badRequestObjectResult.Value is string)
                 {
                     response.Add(badRequestObjectResult.Value.ToString());
-                } 
+                }
+                else if (badRequestObjectResult.Value is IEnumerable<IdentityError> errors)
+                {
+                    foreach (var error in errors)
+                    {
+                        response.Add(error.Description.ToString());
+                    }
+                }
                 else
                 {
                     foreach (var key in context.ModelState.Keys)
@@ -35,6 +43,7 @@ namespace MoviesAPI.Filters
                 context.Result = new BadRequestObjectResult(response);
             }
         }
+
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
