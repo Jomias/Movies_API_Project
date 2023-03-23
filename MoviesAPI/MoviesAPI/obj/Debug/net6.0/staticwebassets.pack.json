@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\0b0b47fa-1058-44d7-9be0-0f583b9596f9.jpg",
+      "PackagePath": "staticwebassets\\actors\\0b0b47fa-1058-44d7-9be0-0f583b9596f9.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\2363c378-174c-48ce-b4e7-a5ef4beebb03.jpg",
+      "PackagePath": "staticwebassets\\actors\\2363c378-174c-48ce-b4e7-a5ef4beebb03.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\55ef3cab-4394-483c-a3a9-749c2cbf208d.jpg",
+      "PackagePath": "staticwebassets\\actors\\55ef3cab-4394-483c-a3a9-749c2cbf208d.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\632c3c4f-6047-4ccc-89f0-b2e064bcc4ea.jpg",
+      "PackagePath": "staticwebassets\\actors\\632c3c4f-6047-4ccc-89f0-b2e064bcc4ea.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\72387f65-7f43-471c-a241-14bedabf1721.jpg",
+      "PackagePath": "staticwebassets\\actors\\72387f65-7f43-471c-a241-14bedabf1721.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\eb42d601-4300-46f6-8f47-052e25cc8660.jpg",
+      "PackagePath": "staticwebassets\\actors\\eb42d601-4300-46f6-8f47-052e25cc8660.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\f973e69f-9c24-4048-aaf0-4a24a47396e9.jpg",
+      "PackagePath": "staticwebassets\\actors\\f973e69f-9c24-4048-aaf0-4a24a47396e9.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\movies\\009a59c0-f961-4772-acf3-bcfa01eaaed0.jpg",
+      "PackagePath": "staticwebassets\\movies\\009a59c0-f961-4772-acf3-bcfa01eaaed0.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\movies\\0105c3db-4072-4c02-8ea0-c351ccd03e05.jpg",
+      "PackagePath": "staticwebassets\\movies\\0105c3db-4072-4c02-8ea0-c351ccd03e05.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\movies\\32b5d3a4-0f31-4480-a481-c66ff66a5d6a.jpg",
+      "PackagePath": "staticwebassets\\movies\\32b5d3a4-0f31-4480-a481-c66ff66a5d6a.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\movies\\85fd8ac9-1587-481f-9a4b-60fe6df228bf.jpg",
+      "PackagePath": "staticwebassets\\movies\\85fd8ac9-1587-481f-9a4b-60fe6df228bf.jpg"
+    },
+    {
+      "Id": "D:\\Tai_lieu_dai_hoc\\Nam_3\\Ki_2\\API\\BTL\\MoviesAPI\\MoviesAPI\\wwwroot\\movies\\dbe17dfc-2c7b-4d4b-ba0c-4c8a0ee7dabc.jpg",
+      "PackagePath": "staticwebassets\\movies\\dbe17dfc-2c7b-4d4b-ba0c-4c8a0ee7dabc.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MoviesAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MoviesAPI.props",
+      "PackagePath": "build\\MoviesAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MoviesAPI.props",
+      "PackagePath": "buildMultiTargeting\\MoviesAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MoviesAPI.props",
+      "PackagePath": "buildTransitive\\MoviesAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
